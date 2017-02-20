@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+<!-- <bean id="product1" class="com.incubator.inventory.entity.Product">
+					<property name="productName" value="JK Paper" />
+					<property name="productType" value="Paper" />
+					<property name="productId" value="P001" />
+					<property name="productBuyingPrice" value="160.00" />
+					<property name="productSellingPrice" value="210.00" />
+					<property name="productMRP" value="290.00" />
+					<property name="productQuantity" value="20" />
+					<property name="productVAT" value="5.0" />
+				
+				</bean> -->
+				
+
+	<bean id="listOfProducts" class="java.util.ArrayList">
+	
+		<constructor-arg>
+		<list>
+		<bean  class="com.incubator.inventory.entity.Product">
+		<property name="productName" value="Copy Power" />
+					<property name="productType" value="Paper" />
+					<property name="productId" value="P002" />
+					<property name="productBuyingPrice" value="160.00" />
+					<property name="productSellingPrice" value="210.00" />
+					<property name="productMRP" value="290.00" />
+					<property name="productQuantity" value="20" />
+					<property name="productVAT" value="5.0" />
+		</bean>
+		<bean class="com.incubator.inventory.entity.Product">
+					<property name="productName" value="Spring File" />
+					<property name="productType" value="File and Folder" />
+					<property name="productId" value="F001" />
+					<property name="productBuyingPrice" value="160.00" />
+					<property name="productSellingPrice" value="210.00" />
+					<property name="productMRP" value="290.00" />
+					<property name="productQuantity" value="20" />
+					<property name="productVAT" value="12.50" />
+				
+				</bean>
+				<bean class="com.incubator.inventory.entity.Product">
+					<property name="productName" value="L Folder" />
+					<property name="productType" value="File and Folder" />
+					<property name="productId" value="F002" />
+					<property name="productBuyingPrice" value="16.00" />
+					<property name="productSellingPrice" value="21.00" />
+					<property name="productMRP" value="29.00" />
+					<property name="productQuantity" value="20" />
+					<property name="productVAT" value="12.50" />
+				
+				</bean>
+		</list>
+	
+		
+		</constructor-arg>
+	</bean>
+</beans>
